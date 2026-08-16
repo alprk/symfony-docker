@@ -8,10 +8,12 @@
     "service": "php",
     "workspaceFolder": "/app",
     "features": {
-        "ghcr.io/devcontainers/features/node:1": {}
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "22"
+        }
     },
     "remoteUser": "nonroot",
-    "postCreateCommand": "npm install -g intelephense",
+    "postCreateCommand": "npm install -g intelephense @qwen-code/qwen-code@latest",
     "customizations": {
         "vscode": {
             "extensions": [
